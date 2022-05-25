@@ -15,6 +15,10 @@ It will load in domain specific logic, i.e. about your game,
 and it's job is to connect the results to the interface.
 Not do any of the *thinking* about the game itself.
 
+When building the `index.html` file, there are a lot of elements to choose from,
+a useful guide is the
+[MDN – HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+
 A nice youtube playlist, by Mozilla, about browser based technologies, the web,
 is here:
 https://www.youtube.com/playlist?list=PLo3w8EB99pqLEopnunz-dOOBJ8t-Wgt2g
