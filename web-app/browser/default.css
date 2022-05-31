@@ -1,19 +1,85 @@
+:root
+{
+    --footer-height: 48px;
+    --header-height: 64px;
+    --sidebar-width: 300px;
+    /* --sidebar-max-width: 300px; */
+}
+
 body
 {
-    padding: 0;
+    background: #f08;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16pt;
+    height: 100%;
     margin: 0;
+    position: absolute;
+    width: 100%;
+}
+
+header
+{
+    background: #80f;
+    height: var(--header-height);
+    position: absolute;
+    width: 100%;
+}
+
+aside
+{
+    background: #0f8;
+    height: calc(100% - var(--header-height) - var(--footer-height));
+    /* max-width: var(--sidebar-max-width); */
+    position: absolute;
+    top: var(--header-height);
+    width: var(--sidebar-width);
+}
+
+main
+{
+    background: #f80;
+    height: calc(100% - var(--header-height) - var(--footer-height));
+    left: var(--sidebar-width);
+    position: absolute;
+    top: var(--header-height);
+    width: calc(100% - var(--sidebar-width));
 }
 
 footer
 {
-    background: #8f0;
-    font-size: smaller;
+    background: #08f;
+    bottom: 0px;
+    height: var(--footer-height);
     position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
-#first_word
+.grid
 {
-    color: red;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: blue;
+}
+
+.row
+{
+    height: calc(100% / 3);
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.cell
+{
+    background-color: red;
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: calc(100% / 3);
 }
