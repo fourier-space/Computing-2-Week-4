@@ -95,3 +95,8 @@ footer
     position: relative;
     width: calc(100% / var(--grid-columns));
 }
+
+.cell.on
+{
+    background-color: white;
+}
