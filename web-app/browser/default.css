@@ -61,7 +61,7 @@ footer
     position: absolute;
     width: 100%;
     height: 400px;
-    background: blue;
+    background: #f08;
 }
 
 .row
@@ -75,7 +75,7 @@ footer
 
 .cell
 {
-    background-color: red;
+    background-color: #8f0;
     display: inline-block;
     height: 100%;
     margin: 0;
