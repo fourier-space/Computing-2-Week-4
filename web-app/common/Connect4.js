@@ -331,12 +331,20 @@ Connect4.winning_slots = function (board) {
     ]);
 };
 
-// const print = function (board) {
-//     console.log(Connect4.to_string_with_tokens(
-//         Connect4.token_strings.zombies
-//     )(board));
-//     return board;
-// };
-// debugger;
+/**
+ * Impure Function.
+ * Logs to the console a string representation of a board,
+ * and returns that board.
+ * @memberof Connect4
+ * @function
+ * @param {Connect4.board} board The board to represent.
+ * @returns {Connect4.board} String representation.
+ */
+Connect4.print = function (board) {
+    console.log(Connect4.to_string_with_tokens(
+        Connect4.token_strings.disks
+    )(board));
+    return board;
+};
 
 export default Object.freeze(Connect4);
