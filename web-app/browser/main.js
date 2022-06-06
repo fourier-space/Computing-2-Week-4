@@ -13,7 +13,7 @@ const footer = document.getElementById("footer");
 
 const range = (n) => Array.from({"length": n}, (ignore, k) => k);
 
-const cells = range(grid_rows).map(function (row_index) {
+const cells = range(grid_rows).map(function () {
     const row = document.createElement("div");
     row.className = "row";
 
